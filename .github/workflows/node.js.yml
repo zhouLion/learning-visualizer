@@ -28,12 +28,19 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run lint
-
-    - name: Build and Deploy
+    - run: npm run build
+    
+#     - name: Checkout code
+#       uses: actions/checkout@master
+#     - name: Update diagram
+#       uses: githubocto/repo-visualizer@0.6.1
+#       with:
+#         output_file: "images/diagram.svg"
+#         excluded_paths: "dist,node_modules"
+    
+    - name: 发布静态网页
       uses: JamesIves/github-pages-deploy-action@4.1.4
-      env:
-        # ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: dist
-        BUILD_SCRIPT: npm run build
+      with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
     
