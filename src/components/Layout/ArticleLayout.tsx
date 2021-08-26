@@ -72,8 +72,6 @@ const factoryArticleLayout = (
       this.currentPage = page.toString();
     }
     this.adjustCurrentPage();
-    // this.bindArrowEvent();
-    document.addEventListener('keydown', this.onkeydown);
   },
 
   beforeDestroy() {
@@ -127,17 +125,12 @@ const factoryArticleLayout = (
       try {
         // 这里判断 fullPath 是否相等，防止重复跳转
         const { currentPage, $router, $route } = this;
-        const resolvedFullPath = $router.resolve({
-          ...$route,
-          query: {
-            page: currentPage,
-          },
-        }).resolved.fullPath;
-        if (!$route.query.page || resolvedFullPath !== $route.fullPath) {
+        if (!$route.query.currentPage || !currentPage || $route.query.currentPage !== currentPage) {
           $router.push({
+            name: this.$route.name as string,
             query: {
               page: currentPage,
-            },
+            }
           });
         }
       } catch (error) {
