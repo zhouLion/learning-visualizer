@@ -1,0 +1,73 @@
+@keyframes q-skeleton-loading {
+  from {
+    background-position: 20% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.q-skeleton {
+  display       : flex;
+  flex-direction: column;
+  background    : #eee;
+  padding       : 1.2em;
+
+  .q-skeleton__item__space+.q-skeleton__item {
+    margin-left: auto;
+  }
+
+  .q-skeleton__item+.q-skeleton__item__space {
+    margin-left: auto;
+  }
+
+  &--animation {
+    .q-skeleton__item {
+      animation: q-skeleton-loading 1.5s ease infinite reverse;
+    }
+  }
+}
+
+.q-skeleton__row {
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : wrap;
+  align-items   : center;
+}
+
+.q-skeleton__item {
+  margin          : 0.3em;
+  background-color: #ccc;
+  background-size : 400% 50%;
+  background-image: linear-gradient(90deg, #bdbdbd87 50%, #fafafa85 100%);
+
+  &__circle {
+    flex-basis   : 1.5em;
+    height       : 1.5em;
+    border-radius: 50%;
+  }
+
+  &__bigc {
+    flex-basis   : 4em;
+    height       : 4em;
+    border-radius: 50%;
+  }
+
+  &__button {
+    flex-basis   : 4em;
+    height       : 2em;
+    border-radius: 0.4em;
+  }
+
+  &__paragraph {
+    flex-basis: 100%;
+    height    : 5em;
+  }
+
+  &__line {
+    height       : 1.5em;
+    flex-basis   : 30%;
+    border-radius: 0.4em;
+  }
+}
