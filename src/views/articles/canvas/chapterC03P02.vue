@@ -1,15 +1,27 @@
 <template>
   <div>
     <h2>canvas - 图片处理</h2>
+    <canvas ref="canvas" :width="canvasSize.width" :height="canvasSize.height"></canvas>
     <h3>色彩处理</h3>
     <div>
-      <canvas ref="canvas" :width="canvasSize.width" :height="canvasSize.height"></canvas>
       <q-button-group>
         <q-button :disabled="colorType === 'origin'" @click="onSwitchColor('origin')">原图</q-button>
         <q-button :disabled="colorType === 'invert'" @click="onSwitchColor('invert')">反色</q-button>
         <q-button :disabled="colorType === 'pseudo'" @click="onSwitchColor('pseudo')">伪彩</q-button>
         <!-- eslint-disable-next-line max-len -->
         <q-button :disabled="colorType === 'grayscale'" @click="onSwitchColor('grayscale')">灰度</q-button>
+      </q-button-group>
+    </div>
+
+    <h3>滤镜处理</h3>
+    <div>
+      <q-button-group>
+        <q-button :disabled="colorType === 'removeRed'" @click="onSwitchColor('removeRed')">去除红色通道</q-button>
+        <q-button
+          :disabled="colorType === 'removeGreen'"
+          @click="onSwitchColor('removeGreen')"
+        >去除绿色通道</q-button>
+        <q-button :disabled="colorType === 'removeBlue'" @click="onSwitchColor('removeBlue')">去除蓝色通道</q-button>
       </q-button-group>
     </div>
   </div>
@@ -23,7 +35,10 @@ import lena from './assets/lena.jpeg';
 type ColorTypes = 'origin' |
   'invert' |
   'pseudo' |
-  'grayscale'
+  'grayscale' |
+  'removeRed' |
+  'removeGreen' |
+  'removeBlue'
 
 export default Vue.extend({
   data() {
@@ -81,6 +96,15 @@ export default Vue.extend({
         case 'grayscale':
           this.drawGrayscaleImg(canvas, img);
           break;
+        case 'removeRed':
+          this.drawDoubleChannelImg(canvas, img, 0);
+          break;
+        case 'removeGreen':
+          this.drawDoubleChannelImg(canvas, img, 1);
+          break;
+        case 'removeBlue':
+          this.drawDoubleChannelImg(canvas, img, 2);
+          break;
         default:
           break;
       }
@@ -115,7 +139,24 @@ export default Vue.extend({
     },
 
     drawPseudoImg(canvas: HTMLCanvasElement, img: HTMLImageElement) {
-      // TODO
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const len = imageData.data.length;
+        let pointIndex = 0;
+        while (pointIndex <= len) {
+          const red = imageData.data[pointIndex];
+          const green = imageData.data[pointIndex + 1];
+          const blue = imageData.data[pointIndex + 2];
+          const alpha = imageData.data[pointIndex + 3];
+          imageData.data[pointIndex++] = Math.round(0.393 * red + 0.769 * green + 0.189 * blue);
+          imageData.data[pointIndex++] = Math.round(0.349 * red + 0.686 * green + 0.168 * blue);
+          imageData.data[pointIndex++] = Math.round(0.272 * red + 0.534 * green + 0.131 * blue);
+          imageData.data[pointIndex++] = alpha;
+        }
+        ctx.putImageData(imageData, 0, 0);
+      }
     },
 
     drawGrayscaleImg(canvas: HTMLCanvasElement, img: HTMLImageElement) {
@@ -135,6 +176,21 @@ export default Vue.extend({
           imageData.data[pointIndex++] = avg;
           imageData.data[pointIndex++] = avg;
           imageData.data[pointIndex++] = alpha;
+        }
+        ctx.putImageData(imageData, 0, 0);
+      }
+    },
+
+    drawDoubleChannelImg(canvas: HTMLCanvasElement, img: HTMLImageElement, channel: number) {
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const len = imageData.data.length;
+        let pointIndex = 0;
+        while (pointIndex <= len) {
+          imageData.data[pointIndex + channel] = 0;
+          pointIndex += 4;
         }
         ctx.putImageData(imageData, 0, 0);
       }
