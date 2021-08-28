@@ -13,7 +13,8 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'import/no-webpack-loader-syntax': 'off',
     'import/no-duplicates': 'off',
-    'import/extensions': 'off'
+    'import/extensions': 'off',
+    'max-len': ["error", { "code": 150 }]
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',

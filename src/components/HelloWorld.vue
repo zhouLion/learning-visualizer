@@ -4,7 +4,7 @@
     <small>{{ msg }}</small>
     <ul>
       <li v-for="menu in menuList" :key="menu.name">
-        <router-link :to="{ name: menu.name }" rel="noopener">{{ menu.meta.title }}</router-link>
+        <router-link :to="{ name: menu.name }" rel="noopener">{{ getMetaTitle(menu) }}</router-link>
       </li>
     </ul>
   </div>
@@ -12,6 +12,7 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { RouteConfig } from 'vue-router';
 import { ARTICLES_ROUTERS } from '@/router/index';
 
 export default Vue.extend({
@@ -23,6 +24,11 @@ export default Vue.extend({
     return {
       menuList: ARTICLES_ROUTERS,
     };
+  },
+  methods: {
+    getMetaTitle(menu: RouteConfig) {
+      return menu.meta ? menu.meta.title : menu.name;
+    },
   },
 });
 </script>
