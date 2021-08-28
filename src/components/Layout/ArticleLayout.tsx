@@ -74,10 +74,6 @@ const factoryArticleLayout = (
     this.adjustCurrentPage();
   },
 
-  beforeDestroy() {
-    document.removeEventListener('keydown', this.onkeydown);
-  },
-
   computed: {
     currentIndex(): number {
       const { currentPage } = this;
@@ -86,14 +82,6 @@ const factoryArticleLayout = (
   },
 
   methods: {
-    onkeydown(evt: KeyboardEvent) {
-      if (evt.key === 'ArrowRight') {
-        this.onclickNext();
-      } else if (evt.key === 'ArrowLeft') {
-        this.onclickPrev();
-      }
-    },
-
     createPromise(name: string) {
       return codeList[name];
     },
@@ -122,10 +110,11 @@ const factoryArticleLayout = (
     },
 
     changeRouter() {
+      console.count('changeRouter');
       try {
         // 这里判断 fullPath 是否相等，防止重复跳转
         const { currentPage, $router, $route } = this;
-        if (!$route.query.currentPage || !currentPage || $route.query.currentPage !== currentPage) {
+        if (!$route.query.page || !currentPage || $route.query.page !== currentPage) {
           $router.push({
             name: this.$route.name as string,
             query: {

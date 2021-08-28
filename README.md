@@ -1,9 +1,12 @@
-# data-visualization
+# learning-visualizer
+
+![code-visualizer](./diagram.svg)
 
 ## Project setup
 ```
 npm install
 ```
+
 
 ### Compiles and hot-reloads for development
 ```

@@ -1,8 +1,20 @@
 <template>
   <section>
     <h2>第一节：概述</h2>
-    <p>Three 是一个基于 webGL 技术</p>
+    <p>WebGL 是基于OpenGL ES 2.0的Web标准，可以通过HTML5 Canvas元素作为DOM接口访问。</p>
     <canvas ref="canvas" width="400" height="300"></canvas>
+    <p>ThreeJS 是一个基于 WebGL 封装的库。</p>
+    <ol>
+      <li>
+        <a href="https://webglfundamentals.org/webgl/lessons/zh_cn/">WebGL 理论基础</a>
+      </li>
+      <li>
+        <a href="https://webgl2fundamentals.org/webgl/lessons/zh_cn/">WebGL2 理论基础</a>
+      </li>
+      <li>
+        <a href="https://threejsfundamentals.org/threejs/lessons/zh_cn/">Three.js 基础</a>
+      </li>
+    </ol>
   </section>
 </template>
 
