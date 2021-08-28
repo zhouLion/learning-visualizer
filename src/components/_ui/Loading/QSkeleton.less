@@ -4,7 +4,7 @@
   }
 
   to {
-    background-position: 100% 50%;
+    background-position: 200% 10%;
   }
 }
 
@@ -24,7 +24,7 @@
 
   &--animation {
     .q-skeleton__item {
-      animation: q-skeleton-loading 1.5s ease infinite reverse;
+      animation: q-skeleton-loading 1.5s linear infinite alternate;
     }
   }
 }
@@ -39,8 +39,8 @@
 .q-skeleton__item {
   margin          : 0.3em;
   background-color: #ccc;
-  background-size : 400% 50%;
-  background-image: linear-gradient(90deg, #bdbdbd87 50%, #fafafa85 100%);
+  background-size : 300% 50%;
+  background-image: linear-gradient(40deg, #bdbdbd87 50%, #fafafa85 100%);
 
   &__circle {
     flex-basis   : 1.5em;
