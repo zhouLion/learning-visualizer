@@ -15,6 +15,7 @@
 
     <h3>滤镜处理</h3>
     <div>
+      <div>双通道</div>
       <q-button-group>
         <q-button :disabled="colorType === 'removeRed'" @click="onSwitchColor('removeRed')">去除红色通道</q-button>
         <q-button
@@ -22,6 +23,12 @@
           @click="onSwitchColor('removeGreen')"
         >去除绿色通道</q-button>
         <q-button :disabled="colorType === 'removeBlue'" @click="onSwitchColor('removeBlue')">去除蓝色通道</q-button>
+      </q-button-group>
+      <div>单通道</div>
+      <q-button-group>
+        <q-button :disabled="colorType === 'onlyRed'" @click="onSwitchColor('onlyRed')">仅保留红色通道</q-button>
+        <q-button :disabled="colorType === 'onlyGreen'" @click="onSwitchColor('onlyGreen')">仅保留绿色通道</q-button>
+        <q-button :disabled="colorType === 'onlyBlue'" @click="onSwitchColor('onlyBlue')">仅保留蓝色通道</q-button>
       </q-button-group>
     </div>
   </div>
@@ -38,7 +45,10 @@ type ColorTypes = 'origin' |
   'grayscale' |
   'removeRed' |
   'removeGreen' |
-  'removeBlue'
+  'removeBlue' |
+  'onlyRed' |
+  'onlyGreen' |
+  'onlyBlue'
 
 export default Vue.extend({
   data() {
@@ -104,6 +114,15 @@ export default Vue.extend({
           break;
         case 'removeBlue':
           this.drawDoubleChannelImg(canvas, img, 2);
+          break;
+        case 'onlyRed':
+          this.drawSingleChannelImg(canvas, img, 0);
+          break;
+        case 'onlyGreen':
+          this.drawSingleChannelImg(canvas, img, 1);
+          break;
+        case 'onlyBlue':
+          this.drawSingleChannelImg(canvas, img, 2);
           break;
         default:
           break;
@@ -190,6 +209,33 @@ export default Vue.extend({
         let pointIndex = 0;
         while (pointIndex <= len) {
           imageData.data[pointIndex + channel] = 0;
+          pointIndex += 4;
+        }
+        ctx.putImageData(imageData, 0, 0);
+      }
+    },
+
+    drawSingleChannelImg(canvas: HTMLCanvasElement, img: HTMLImageElement, channel: number) {
+      const ctx = canvas.getContext('2d');
+      if (ctx) {
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const len = imageData.data.length;
+        let pointIndex = 0;
+        while (pointIndex <= len) {
+          let index = -1;
+          index += 1;
+          if (index !== channel) {
+            imageData.data[pointIndex + index] = 0;
+          }
+          index += 1;
+          if (index !== channel) {
+            imageData.data[pointIndex + index] = 0;
+          }
+          index += 1;
+          if (index !== channel) {
+            imageData.data[pointIndex + index] = 0;
+          }
           pointIndex += 4;
         }
         ctx.putImageData(imageData, 0, 0);

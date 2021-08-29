@@ -3,7 +3,6 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
-import CodePreview from '@/components/CodePreview.vue';
 import factoryArticleLayout from '@/components/Layout/ArticleLayout';
 import { findAsyncComponents } from '@/utils/register-components';
 
