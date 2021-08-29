@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/learning-visualizer/precache-manifest.638dfc7b32dce69587c3f796c83d0d5c.js"
+  "/learning-visualizer/precache-manifest.ac52c5ffe20fd5e2460c38860dc7dc12.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "data-visualization"});

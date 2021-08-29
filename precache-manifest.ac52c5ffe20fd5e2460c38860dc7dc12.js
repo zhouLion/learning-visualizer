@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4b92b8980189d5c6a39a",
+    "revision": "d7576af977563de65069",
     "url": "/learning-visualizer/css/app.46bb0f00.css"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/articles.853e180b.css"
   },
   {
-    "revision": "c03f2b4bddc6f7a7cc92",
+    "revision": "9c406b668550a6f07580",
     "url": "/learning-visualizer/css/canvas-demo.50dcaadf.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/chunk-0db2ed0b.29a32e9b.css"
   },
   {
-    "revision": "6c55cb549b1d5fd7babc",
-    "url": "/learning-visualizer/css/chunk-0ef11a34.ffa2c95f.css"
+    "revision": "03b0c490747d0007ba95",
+    "url": "/learning-visualizer/css/chunk-297b6717.eb2a4044.css"
+  },
+  {
+    "revision": "076d3a13886f4a18f1fa",
+    "url": "/learning-visualizer/css/chunk-75603946.d7ae8390.css"
   },
   {
     "revision": "c1ff391d06cc67b50290",
     "url": "/learning-visualizer/css/chunk-75e6d274.6fa88a05.css"
-  },
-  {
-    "revision": "9068ffd772a8600af716",
-    "url": "/learning-visualizer/css/chunk-b3c0c984.d7ae8390.css"
   },
   {
     "revision": "f21cbada30d4752ffb61",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/chunk-vendors.550ca80d.css"
   },
   {
-    "revision": "a143201fcd9350ed1c9e",
+    "revision": "0966cc6a6abede3d6b86",
     "url": "/learning-visualizer/css/d3-demo.50dcaadf.css"
   },
   {
@@ -88,7 +88,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/img/three/chess.png"
   },
   {
-    "revision": "4d47d74a70f58fe98282211fc2ac3bd5",
+    "revision": "0c52936ffd0956deb9496812c99537f1",
     "url": "/learning-visualizer/index.html"
   },
   {
@@ -96,16 +96,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/about.b3e3b2f2.js"
   },
   {
-    "revision": "4b92b8980189d5c6a39a",
-    "url": "/learning-visualizer/js/app.29b9d249.js"
+    "revision": "d7576af977563de65069",
+    "url": "/learning-visualizer/js/app.e01eb54d.js"
   },
   {
     "revision": "8a8724b3ad46fd9c70d0",
     "url": "/learning-visualizer/js/articles.e50ee7ce.js"
   },
   {
-    "revision": "c03f2b4bddc6f7a7cc92",
-    "url": "/learning-visualizer/js/canvas-demo.cdf3253e.js"
+    "revision": "9c406b668550a6f07580",
+    "url": "/learning-visualizer/js/canvas-demo.7f72c7af.js"
   },
   {
     "revision": "06e8a9c3c798df18619a",
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-0db2ed0b.28fdced9.js"
   },
   {
-    "revision": "6c55cb549b1d5fd7babc",
-    "url": "/learning-visualizer/js/chunk-0ef11a34.7ffe4af0.js"
+    "revision": "03b0c490747d0007ba95",
+    "url": "/learning-visualizer/js/chunk-297b6717.1966b70a.js"
   },
   {
-    "revision": "547206fd58ba03a45d4e",
-    "url": "/learning-visualizer/js/chunk-2d0a3481.190010ba.js"
+    "revision": "da9378e5a1317e0b03b8",
+    "url": "/learning-visualizer/js/chunk-2d0a3481.6142c65e.js"
   },
   {
     "revision": "cab5bafdb485b83e0ace",
@@ -152,10 +152,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d0c8457.cee04842.js"
   },
   {
-    "revision": "eea4823ed212e7cac014",
-    "url": "/learning-visualizer/js/chunk-2d0cc602.0b6a29a5.js"
-  },
-  {
     "revision": "db76d895783aa5694b6e",
     "url": "/learning-visualizer/js/chunk-2d0cef03.dd47f031.js"
   },
@@ -170,6 +166,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "825bc8f933483e922588",
     "url": "/learning-visualizer/js/chunk-2d0d2bc3.94c5eb01.js"
+  },
+  {
+    "revision": "4d84a23812d0adfd9758",
+    "url": "/learning-visualizer/js/chunk-2d0d385a.341f5a3d.js"
   },
   {
     "revision": "2ea5bc8e60c92661bef6",
@@ -204,12 +204,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d0f151a.1311109a.js"
   },
   {
+    "revision": "841e2a4e69b9cd1dd780",
+    "url": "/learning-visualizer/js/chunk-2d20e817.ca064685.js"
+  },
+  {
     "revision": "65038eecb15f4eaa8393",
     "url": "/learning-visualizer/js/chunk-2d20f754.0bf36bea.js"
   },
   {
     "revision": "8e26d881544f767c9b68",
     "url": "/learning-visualizer/js/chunk-2d212b57.226c9ff5.js"
+  },
+  {
+    "revision": "64dfb6e4f4afb11f3998",
+    "url": "/learning-visualizer/js/chunk-2d21767b.66db8c5e.js"
+  },
+  {
+    "revision": "68afe094eb4dc5d6f54e",
+    "url": "/learning-visualizer/js/chunk-2d217878.7cfcf542.js"
   },
   {
     "revision": "dd7d0d5527e8da5bdd65",
@@ -244,12 +256,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d225f68.1bad984f.js"
   },
   {
-    "revision": "ce03a96a63d179574a1d",
-    "url": "/learning-visualizer/js/chunk-2d22c70f.180d86de.js"
+    "revision": "31105047f455e0403611",
+    "url": "/learning-visualizer/js/chunk-2d22c4b4.eaabec5b.js"
   },
   {
-    "revision": "d347d1eeeb1acfc0a9f8",
-    "url": "/learning-visualizer/js/chunk-2d22d817.402a9df4.js"
+    "revision": "c15a3224986c982d6f5b",
+    "url": "/learning-visualizer/js/chunk-2d22c703.27c2306c.js"
+  },
+  {
+    "revision": "ce03a96a63d179574a1d",
+    "url": "/learning-visualizer/js/chunk-2d22c70f.180d86de.js"
   },
   {
     "revision": "bfa25e0eda7505d034cc",
@@ -272,6 +288,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-49a02a12.9ea34e0e.js"
   },
   {
+    "revision": "076d3a13886f4a18f1fa",
+    "url": "/learning-visualizer/js/chunk-75603946.51a13d6b.js"
+  },
+  {
     "revision": "c1ff391d06cc67b50290",
     "url": "/learning-visualizer/js/chunk-75e6d274.2eea2d06.js"
   },
@@ -282,10 +302,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7d0257c6538aa80c8c10",
     "url": "/learning-visualizer/js/chunk-9de05c3e.0824ea90.js"
-  },
-  {
-    "revision": "9068ffd772a8600af716",
-    "url": "/learning-visualizer/js/chunk-b3c0c984.f52757ea.js"
   },
   {
     "revision": "f21cbada30d4752ffb61",
@@ -300,8 +316,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-vendors.fa9ef657.js"
   },
   {
-    "revision": "a143201fcd9350ed1c9e",
-    "url": "/learning-visualizer/js/d3-demo.b8fc88ba.js"
+    "revision": "0966cc6a6abede3d6b86",
+    "url": "/learning-visualizer/js/d3-demo.b798ee55.js"
   },
   {
     "revision": "dfee0e0ec5d9a8bf80b2",
