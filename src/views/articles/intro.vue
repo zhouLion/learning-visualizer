@@ -17,7 +17,7 @@
     </header>
 
     <keep-alive>
-      <router-view :key="$route.fullPath"></router-view>
+      <router-view></router-view>
     </keep-alive>
   </div>
 </template>
@@ -37,32 +37,32 @@ export default Vue.extend({
 </script>
 
 <style lang="less" scoped>
-  header.repositive-header {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 1em;
-    background: #ede7f6;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 3px 10px -5px #b39ddb;
-    z-index: 2;
-  }
+header.repositive-header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1em;
+  background: #ede7f6;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 3px 10px -5px #b39ddb;
+  z-index: 2;
+}
 
-  li.q-memu__item {
-    float: left;
-    /* width: 60px; */
-    list-style: none;
-    margin-right: 4px;
-    padding: 4px 8px;
-  }
+li.q-memu__item {
+  float: left;
+  /* width: 60px; */
+  list-style: none;
+  margin-right: 4px;
+  padding: 4px 8px;
+}
 
-  ul.q-menu {
-    margin: 0;
+ul.q-menu {
+  margin: 0;
 
-    a {
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
   }
+}
 </style>
