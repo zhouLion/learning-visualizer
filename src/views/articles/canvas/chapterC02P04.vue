@@ -22,18 +22,17 @@
           @input="draw"
           v-model="lineDash.value"
         />
-        <q-button :disabled="index < 2" @click="removeDash(index)">
+        <q-button size="mini" round :disabled="index < 2" @click="removeDash(index)">
           <div class="rotate-45">+</div>
         </q-button>
       </label>
     </div>
     <div>
-      <q-button @click="addDash">+</q-button>
+      <q-button size="mini" round @click="addDash">+</q-button>
     </div>
     <canvas ref="canvas" width="300" height="100"></canvas>
     <p>
-      补充：
-      <br />在 Canvas 中，虚线可以通过
+      在 Canvas 中，虚线可以通过
       <code>setLineDash</code>简单的实现。
     </p>
     <p>偶数位参数表示虚线长度，奇数表示实线。</p>
@@ -59,10 +58,10 @@ export default Vue.extend({
   },
   computed: {
     ctxDashLineCode(): string {
-      const dashsCode = this.lineDashs.map(d => d.value).join(', ');
+      const dashsCode = this.lineDashParams.join(', ');
       return `ctx.setLineDash([${dashsCode}]);`;
     },
-    setLineDashParams(): number[] {
+    lineDashParams(): number[] {
       return this.lineDashs.map(d => d.value);
     },
   },
@@ -90,7 +89,8 @@ export default Vue.extend({
     },
     drawDashedLine(ctx: CanvasRenderingContext2D) {
       ctx.beginPath();
-      ctx.setLineDash(this.setLineDashParams);
+      // 在这里设置破折号分割格式
+      ctx.setLineDash(this.lineDashParams);
       ctx.moveTo(50, 50);
       ctx.lineTo(250, 50);
       ctx.stroke();
