@@ -91,7 +91,7 @@ export default Vue.extend({
     registerUserEvents(canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) {
       // 鼠标操作
       let enableDrag = false;
-      let lastPoint: Partial<Record<'x' | 'y', number>> = { x: undefined, y: undefined };
+      let lastPoint = { x: 0, y: 0 };
       // 特性检测
       if (document.body.ontouchstart === undefined) {
         // 非触屏设备
@@ -115,7 +115,7 @@ export default Vue.extend({
             ctx.clearRect(x - 5, y - 5, 10, 10);
           } else {
             const newPoint = { x, y };
-            this.drawLine(ctx, lastPoint.x, lastPoint.y, newPoint.x, newPoint.y, 5);
+            this.drawLine(ctx, lastPoint.x, lastPoint.y, newPoint.x, newPoint.y);
             lastPoint = newPoint;
           }
         });
@@ -144,7 +144,7 @@ export default Vue.extend({
             ctx.clearRect(x - 5, y - 5, 10, 10);
           } else {
             const newPoint = { x, y };
-            this.drawLine(ctx, lastPoint.x || 0, lastPoint.y || 0, newPoint.x, newPoint.y);
+            this.drawLine(ctx, lastPoint.x, lastPoint.y, newPoint.x, newPoint.y);
             lastPoint = newPoint;
           }
         });
@@ -209,6 +209,7 @@ export default Vue.extend({
   },
 });
 </script>
+
 <style lang="less" scoped>
 .demo-whiteboard {
   position: relative;
