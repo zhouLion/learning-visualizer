@@ -53,17 +53,24 @@ export default Vue.extend({
     };
   },
   mounted() {
-    const canvas = this.$refs.canvas as HTMLCanvasElement;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) { return; }
-    this.canvas = canvas;
-    this.ctx = ctx;
+    const { canvas, ctx } = this.getCanvasAndContext();
     this.autoSetCanvasSize(canvas);
     this.initCanvasBackground(canvas, ctx);
     this.disableScroll();
     this.registerUserEvents(canvas, ctx);
   },
   methods: {
+    getCanvasAndContext() {
+      const canvas = this.$refs.canvas as HTMLCanvasElement;
+      const ctx = canvas.getContext('2d');
+      if (!ctx) {
+        throw new Error('浏览器太非主流了吧');
+      }
+      this.canvas = canvas;
+      this.ctx = ctx;
+      return { canvas, ctx };
+    },
+
     autoSetCanvasSize(canvas: HTMLCanvasElement) {
       function setCanvasSize() {
         const defaultPadding = 40;
