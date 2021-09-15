@@ -36,6 +36,15 @@
         </tr>
       </tbody>
     </table>
+    <p>
+      其中
+      <code>save()</code>
+      方法会将Canvas的状态推到Canvas绘图的堆栈中，然后通过
+      <code>restore()</code>
+      方法从Canvas绘图的堆栈中取出
+      <code>save()</code>
+      保存的状态。
+    </p>
     <canvas width="400" height="400" ref="canvas"></canvas>
   </div>
 </template>
