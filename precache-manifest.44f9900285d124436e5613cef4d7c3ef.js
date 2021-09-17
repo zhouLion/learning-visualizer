@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67380cf918317105a403",
+    "revision": "66b177d7e9c2622bd5ac",
     "url": "/learning-visualizer/css/app.18dc3402.css"
   },
   {
@@ -8,16 +8,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/articles.a3a90b4e.css"
   },
   {
-    "revision": "155a4c78e74e423197a2",
+    "revision": "7fe8e0a59536d605ad50",
     "url": "/learning-visualizer/css/canvas-demo.38efe1ff.css"
+  },
+  {
+    "revision": "b4b6d40cf5261f2b30f5",
+    "url": "/learning-visualizer/css/chunk-04df69a2.b080f944.css"
   },
   {
     "revision": "329f256df578333a7b49",
     "url": "/learning-visualizer/css/chunk-0db2ed0b.29a32e9b.css"
   },
   {
-    "revision": "5e2192fe26237a9f06fd",
-    "url": "/learning-visualizer/css/chunk-1cef7a92.1b4194ca.css"
+    "revision": "7e2dc8c9eeb4e7ee8ce4",
+    "url": "/learning-visualizer/css/chunk-21f663f7.bdeb246d.css"
   },
   {
     "revision": "83cef8eeb1abebd086c7",
@@ -34,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c1ff391d06cc67b50290",
     "url": "/learning-visualizer/css/chunk-75e6d274.6fa88a05.css"
-  },
-  {
-    "revision": "b0cbdd25d48c3fc097b4",
-    "url": "/learning-visualizer/css/chunk-8fbdf200.888d43d8.css"
   },
   {
     "revision": "c4c8ac950e86a2b92323",
@@ -112,7 +112,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/img/three/chess.png"
   },
   {
-    "revision": "6df2bac9ebbae24f1386342428953a85",
+    "revision": "502f18d1d6e47d85e9cfcfb6c9b55ea7",
     "url": "/learning-visualizer/index.html"
   },
   {
@@ -120,24 +120,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/about.b3e3b2f2.js"
   },
   {
-    "revision": "67380cf918317105a403",
-    "url": "/learning-visualizer/js/app.46f34deb.js"
+    "revision": "66b177d7e9c2622bd5ac",
+    "url": "/learning-visualizer/js/app.cde7b4f4.js"
   },
   {
     "revision": "facdc3819efd28749109",
     "url": "/learning-visualizer/js/articles.f0148462.js"
   },
   {
-    "revision": "155a4c78e74e423197a2",
-    "url": "/learning-visualizer/js/canvas-demo.8971b8e3.js"
+    "revision": "7fe8e0a59536d605ad50",
+    "url": "/learning-visualizer/js/canvas-demo.f5c62d8b.js"
+  },
+  {
+    "revision": "b4b6d40cf5261f2b30f5",
+    "url": "/learning-visualizer/js/chunk-04df69a2.5ae95cc9.js"
   },
   {
     "revision": "329f256df578333a7b49",
     "url": "/learning-visualizer/js/chunk-0db2ed0b.28fdced9.js"
   },
   {
-    "revision": "5e2192fe26237a9f06fd",
-    "url": "/learning-visualizer/js/chunk-1cef7a92.e45c2c0d.js"
+    "revision": "7e2dc8c9eeb4e7ee8ce4",
+    "url": "/learning-visualizer/js/chunk-21f663f7.2ef33eae.js"
   },
   {
     "revision": "da9378e5a1317e0b03b8",
@@ -204,8 +208,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d0d3a25.0189787e.js"
   },
   {
-    "revision": "a2d53240f27a714e7f98",
-    "url": "/learning-visualizer/js/chunk-2d0d6311.3a07f31b.js"
+    "revision": "94bac3f8aebe2ca49a6b",
+    "url": "/learning-visualizer/js/chunk-2d0d6311.9d6883df.js"
   },
   {
     "revision": "c52e4b7944bc35cb7581",
@@ -296,8 +300,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d2290fd.749619a4.js"
   },
   {
-    "revision": "5905a65871d1f94f898c",
-    "url": "/learning-visualizer/js/chunk-2d229452.5448e299.js"
+    "revision": "345a4096eed9a71c2b27",
+    "url": "/learning-visualizer/js/chunk-2d229452.81095c4f.js"
   },
   {
     "revision": "31105047f455e0403611",
@@ -354,10 +358,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "13851701b4f087801703",
     "url": "/learning-visualizer/js/chunk-7f4ff32a.f279c70f.js"
-  },
-  {
-    "revision": "b0cbdd25d48c3fc097b4",
-    "url": "/learning-visualizer/js/chunk-8fbdf200.c9ed067f.js"
   },
   {
     "revision": "c4c8ac950e86a2b92323",
