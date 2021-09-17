@@ -45,7 +45,7 @@
       <code>save()</code>
       保存的状态。
     </p>
-    <canvas width="400" height="400" ref="canvas"></canvas>
+    <canvas width="400" height="200" ref="canvas"></canvas>
   </div>
 </template>
 <script lang="ts">
@@ -66,7 +66,6 @@ export default Vue.extend({
   },
   mounted() {
     const { ctx, canvas } = this.getCanvasAndContext();
-    this.autoSetCanvasSize(canvas);
     this.drawScreen(ctx);
   },
   methods: {
@@ -79,21 +78,6 @@ export default Vue.extend({
       this.canvas = canvas;
       this.ctx = ctx;
       return { canvas, ctx };
-    },
-
-    autoSetCanvasSize(canvas: HTMLCanvasElement) {
-      function setCanvasSize() {
-        const defaultPadding = 40;
-        const pageWidth = document.documentElement.clientWidth - defaultPadding;
-        // const pageHeight = document.documentElement.clientHeight;
-        canvas.width = pageWidth;
-        // canvas.height = pageHeight;
-      }
-      setCanvasSize();
-      // 改变窗口大小重新设置
-      window.onresize = () => {
-        setCanvasSize();
-      };
     },
 
     sleep(ms: number = 1000) {
@@ -141,7 +125,7 @@ export default Vue.extend({
 
       ctx.restore(); // 取出堆栈2（第二个状态）
       ctx.beginPath();
-      ctx.arc(320, 75, 15, 0, Math.PI * 2, true);
+      ctx.arc(300, 75, 15, 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
 
@@ -149,7 +133,7 @@ export default Vue.extend({
 
       ctx.restore(); // 取出堆栈1（第一个状态）
       ctx.beginPath();
-      ctx.arc(400, 75, 8, 0, Math.PI * 2, true);
+      ctx.arc(380, 75, 8, 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
     },

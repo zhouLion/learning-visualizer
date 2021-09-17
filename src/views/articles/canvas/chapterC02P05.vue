@@ -54,7 +54,6 @@ export default Vue.extend({
   },
   mounted() {
     const { canvas, ctx } = this.getCanvasAndContext();
-    this.autoSetCanvasSize(canvas);
     this.initCanvasBackground(canvas, ctx);
     this.disableScroll();
     this.registerUserEvents(canvas, ctx);
@@ -69,21 +68,6 @@ export default Vue.extend({
       this.canvas = canvas;
       this.ctx = ctx;
       return { canvas, ctx };
-    },
-
-    autoSetCanvasSize(canvas: HTMLCanvasElement) {
-      function setCanvasSize() {
-        const defaultPadding = 40;
-        const pageWidth = document.documentElement.clientWidth - defaultPadding;
-        const pageHeight = document.documentElement.clientHeight;
-        canvas.width = pageWidth;
-        canvas.height = pageHeight;
-      }
-      setCanvasSize();
-      // 改变窗口大小重新设置
-      window.onresize = () => {
-        setCanvasSize();
-      };
     },
 
     drawLine(ctx: CanvasRenderingContext2D, x1: number, y1: number, x2: number, y2: number) {
