@@ -14,7 +14,7 @@
     ></canvas>
     <hr />
     <h3>使用 Canvas 提供的 API：</h3>
-    <p>由于矩形是几种非常基础的几何图形，Canvas 提供了下列几个 API，供我们绘制矩形</p>
+    <p>由于矩形是非常基础的几何图形，Canvas 提供了下列几个 API，供我们绘制矩形</p>
     <ul>
       <li>
         <code>ctx.fillRect(x, y, width, height)</code>
@@ -170,20 +170,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style lang="less" scoped>
-.demo-restore {
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2em;
-  }
-  th,
-  td {
-    line-height: 2em;
-    border: 1px solid gray;
-    border-collapse: collapse;
-    padding: 0 1em;
-  }
-}
-</style>

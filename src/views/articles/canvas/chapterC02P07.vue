@@ -102,20 +102,3 @@ export default Vue.extend({
   },
 });
 </script>
-
-<style lang="less" scoped>
-.demo-restore {
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2em;
-  }
-  th,
-  td {
-    line-height: 2em;
-    border: 1px solid gray;
-    border-collapse: collapse;
-    padding: 0 1em;
-  }
-}
-</style>
