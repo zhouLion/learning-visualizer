@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "66b177d7e9c2622bd5ac",
+    "revision": "a6b8169b2292d4ded560",
     "url": "/learning-visualizer/css/app.18dc3402.css"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/articles.a3a90b4e.css"
   },
   {
-    "revision": "7fe8e0a59536d605ad50",
+    "revision": "5010db307f5ccfde7c5a",
     "url": "/learning-visualizer/css/canvas-demo.38efe1ff.css"
   },
   {
@@ -28,10 +28,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/chunk-3cb20436.eb2a4044.css"
   },
   {
-    "revision": "5e34ff8ca606cc7427e0",
-    "url": "/learning-visualizer/css/chunk-49eb39a7.baba227c.css"
-  },
-  {
     "revision": "076d3a13886f4a18f1fa",
     "url": "/learning-visualizer/css/chunk-75603946.d7ae8390.css"
   },
@@ -40,12 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/chunk-75e6d274.6fa88a05.css"
   },
   {
-    "revision": "c4c8ac950e86a2b92323",
-    "url": "/learning-visualizer/css/chunk-92194882.c1e0ac23.css"
-  },
-  {
     "revision": "0b62e98899cacc96ea37",
     "url": "/learning-visualizer/css/chunk-b8c0bcda.c26a9517.css"
+  },
+  {
+    "revision": "f8632ec320db44274386",
+    "url": "/learning-visualizer/css/chunk-bccca0a6.136a11c0.css"
   },
   {
     "revision": "f21cbada30d4752ffb61",
@@ -72,7 +68,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/svg-demo.38efe1ff.css"
   },
   {
-    "revision": "f1b80dd2c9f1ed7ef636",
+    "revision": "d0b743026b04caef9ae8",
     "url": "/learning-visualizer/css/three-demo.38efe1ff.css"
   },
   {
@@ -112,7 +108,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/img/three/chess.png"
   },
   {
-    "revision": "502f18d1d6e47d85e9cfcfb6c9b55ea7",
+    "revision": "6afbd6d363af04864d4551ff263272f4",
     "url": "/learning-visualizer/index.html"
   },
   {
@@ -120,16 +116,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/about.b3e3b2f2.js"
   },
   {
-    "revision": "66b177d7e9c2622bd5ac",
-    "url": "/learning-visualizer/js/app.cde7b4f4.js"
+    "revision": "a6b8169b2292d4ded560",
+    "url": "/learning-visualizer/js/app.38e48410.js"
   },
   {
     "revision": "facdc3819efd28749109",
     "url": "/learning-visualizer/js/articles.f0148462.js"
   },
   {
-    "revision": "7fe8e0a59536d605ad50",
-    "url": "/learning-visualizer/js/canvas-demo.f5c62d8b.js"
+    "revision": "5010db307f5ccfde7c5a",
+    "url": "/learning-visualizer/js/canvas-demo.1cbb266b.js"
   },
   {
     "revision": "b4b6d40cf5261f2b30f5",
@@ -138,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "329f256df578333a7b49",
     "url": "/learning-visualizer/js/chunk-0db2ed0b.28fdced9.js"
+  },
+  {
+    "revision": "a6821800de06a9e9b795",
+    "url": "/learning-visualizer/js/chunk-0ed96680.714b2d58.js"
   },
   {
     "revision": "7e2dc8c9eeb4e7ee8ce4",
@@ -196,8 +196,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d0d2bc3.94c5eb01.js"
   },
   {
-    "revision": "d4f07de7eb7ac1deb0b4",
-    "url": "/learning-visualizer/js/chunk-2d0d3123.17c83e21.js"
+    "revision": "3d28320320ae8dea050a",
+    "url": "/learning-visualizer/js/chunk-2d0d3123.91594132.js"
   },
   {
     "revision": "4d84a23812d0adfd9758",
@@ -226,6 +226,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4d122e62dd7b17f9f3b0",
     "url": "/learning-visualizer/js/chunk-2d0db837.fc4faf00.js"
+  },
+  {
+    "revision": "de9125cb6e0850134413",
+    "url": "/learning-visualizer/js/chunk-2d0de2bb.57343b46.js"
   },
   {
     "revision": "3953275694b5479fd900",
@@ -296,8 +300,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d225f68.1bad984f.js"
   },
   {
-    "revision": "789e1b68071330a588d5",
-    "url": "/learning-visualizer/js/chunk-2d2290fd.749619a4.js"
+    "revision": "b65e8f3ff7b0ec1ba16f",
+    "url": "/learning-visualizer/js/chunk-2d2290fd.e6d0f081.js"
   },
   {
     "revision": "345a4096eed9a71c2b27",
@@ -316,8 +320,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d22c70f.180d86de.js"
   },
   {
+    "revision": "409240c67fd15df3e442",
+    "url": "/learning-visualizer/js/chunk-2d22d833.b7ebd9d9.js"
+  },
+  {
     "revision": "bfa25e0eda7505d034cc",
     "url": "/learning-visualizer/js/chunk-2d2304e5.7b21bb6d.js"
+  },
+  {
+    "revision": "294ded52acd78e1048ec",
+    "url": "/learning-visualizer/js/chunk-33243335.dbf392b8.js"
   },
   {
     "revision": "83cef8eeb1abebd086c7",
@@ -328,20 +340,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-3de2ebb9.5cbe36a1.js"
   },
   {
-    "revision": "9da2656527a4d099819c",
-    "url": "/learning-visualizer/js/chunk-40a0a49f.e09517e4.js"
-  },
-  {
     "revision": "339ccc6e65d2b5279f16",
     "url": "/learning-visualizer/js/chunk-49502cd2.03e08721.js"
   },
   {
     "revision": "79cce2229b16d65091e9",
     "url": "/learning-visualizer/js/chunk-49a02a12.9ea34e0e.js"
-  },
-  {
-    "revision": "5e34ff8ca606cc7427e0",
-    "url": "/learning-visualizer/js/chunk-49eb39a7.25aa499e.js"
   },
   {
     "revision": "d4cc2819a51b7ec21326",
@@ -360,16 +364,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-7f4ff32a.f279c70f.js"
   },
   {
-    "revision": "c4c8ac950e86a2b92323",
-    "url": "/learning-visualizer/js/chunk-92194882.bc2abee4.js"
-  },
-  {
     "revision": "7d0257c6538aa80c8c10",
     "url": "/learning-visualizer/js/chunk-9de05c3e.0824ea90.js"
   },
   {
     "revision": "0b62e98899cacc96ea37",
     "url": "/learning-visualizer/js/chunk-b8c0bcda.d4d127f0.js"
+  },
+  {
+    "revision": "f8632ec320db44274386",
+    "url": "/learning-visualizer/js/chunk-bccca0a6.80818590.js"
   },
   {
     "revision": "f21cbada30d4752ffb61",
@@ -400,8 +404,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/svg-demo.95871a89.js"
   },
   {
-    "revision": "f1b80dd2c9f1ed7ef636",
-    "url": "/learning-visualizer/js/three-demo.4c885696.js"
+    "revision": "d0b743026b04caef9ae8",
+    "url": "/learning-visualizer/js/three-demo.144e7972.js"
   },
   {
     "revision": "a0159025d934a9eb9a4193e99ed4d5fd",
