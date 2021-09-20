@@ -44,13 +44,11 @@ export default Vue.extend({
     initCanvases() {
       if (this.$refs.arcCanvas) {
         const { canvas: arcCanvas, ctx: arcCtx } = this.getCanvasAndContext(this.$refs.arcCanvas as HTMLCanvasElement);
-        this.autoSetCanvasSize(arcCanvas);
         this.arcCanvas = arcCanvas;
         this.arcCtx = arcCtx;
       }
       if (this.$refs.pieCanvas) {
         const { canvas: pieCanvas, ctx: pieCtx } = this.getCanvasAndContext(this.$refs.pieCanvas as HTMLCanvasElement);
-        this.autoSetCanvasSize(pieCanvas);
         this.pieCanvas = pieCanvas;
         this.pieCtx = pieCtx;
       }
@@ -62,19 +60,6 @@ export default Vue.extend({
         throw new Error('浏览器太非主流了吧');
       }
       return { canvas, ctx };
-    },
-
-    autoSetCanvasSize(canvas: HTMLCanvasElement) {
-      function setCanvasSize() {
-        const defaultPadding = 40;
-        const pageWidth = document.documentElement.clientWidth - defaultPadding;
-        canvas.width = pageWidth;
-      }
-      setCanvasSize();
-      // 改变窗口大小重新设置
-      window.onresize = () => {
-        setCanvasSize();
-      };
     },
 
     drawArc(ctx: CanvasRenderingContext2D, center: number[], radius: number, startDeg: number, endDeg: number) {
