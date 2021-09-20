@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a6b8169b2292d4ded560",
+    "revision": "708bbc42b72b473c69ae",
     "url": "/learning-visualizer/css/app.18dc3402.css"
   },
   {
@@ -8,8 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/articles.a3a90b4e.css"
   },
   {
-    "revision": "5010db307f5ccfde7c5a",
-    "url": "/learning-visualizer/css/canvas-demo.38efe1ff.css"
+    "revision": "abb61a0efb9d05243d2b",
+    "url": "/learning-visualizer/css/canvas-demo.9788d6f8.css"
+  },
+  {
+    "revision": "cb7be15f32231643b7f9",
+    "url": "/learning-visualizer/css/chunk-04350619.8bcfe37c.css"
   },
   {
     "revision": "b4b6d40cf5261f2b30f5",
@@ -56,20 +60,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/css/chunk-vendors.550ca80d.css"
   },
   {
-    "revision": "9c684484bade92ac8934",
-    "url": "/learning-visualizer/css/d3-demo.38efe1ff.css"
+    "revision": "c4bd551d5138ae36a1b7",
+    "url": "/learning-visualizer/css/d3-demo.9788d6f8.css"
   },
   {
-    "revision": "cd413de7a8320def9b7d",
-    "url": "/learning-visualizer/css/ol-demo.e31193b0.css"
+    "revision": "dd79adacc07b56643a32",
+    "url": "/learning-visualizer/css/ol-demo.7281c630.css"
   },
   {
-    "revision": "64775a180bcaa35e8a82",
-    "url": "/learning-visualizer/css/svg-demo.38efe1ff.css"
+    "revision": "df2318b53298a60a8527",
+    "url": "/learning-visualizer/css/svg-demo.9788d6f8.css"
   },
   {
-    "revision": "d0b743026b04caef9ae8",
-    "url": "/learning-visualizer/css/three-demo.38efe1ff.css"
+    "revision": "f2d651b17ca215722980",
+    "url": "/learning-visualizer/css/three-demo.9788d6f8.css"
   },
   {
     "revision": "be661704d712db63f01834e0b62cc4f9",
@@ -108,7 +112,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/img/three/chess.png"
   },
   {
-    "revision": "6afbd6d363af04864d4551ff263272f4",
+    "revision": "95a98d673361d0cddfc72c1cf6fa2308",
     "url": "/learning-visualizer/index.html"
   },
   {
@@ -116,16 +120,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/about.b3e3b2f2.js"
   },
   {
-    "revision": "a6b8169b2292d4ded560",
-    "url": "/learning-visualizer/js/app.38e48410.js"
+    "revision": "708bbc42b72b473c69ae",
+    "url": "/learning-visualizer/js/app.23a3e1a6.js"
   },
   {
     "revision": "facdc3819efd28749109",
     "url": "/learning-visualizer/js/articles.f0148462.js"
   },
   {
-    "revision": "5010db307f5ccfde7c5a",
-    "url": "/learning-visualizer/js/canvas-demo.1cbb266b.js"
+    "revision": "abb61a0efb9d05243d2b",
+    "url": "/learning-visualizer/js/canvas-demo.911bd1d7.js"
+  },
+  {
+    "revision": "cb7be15f32231643b7f9",
+    "url": "/learning-visualizer/js/chunk-04350619.8daf10a0.js"
   },
   {
     "revision": "b4b6d40cf5261f2b30f5",
@@ -228,8 +236,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d0db837.fc4faf00.js"
   },
   {
-    "revision": "de9125cb6e0850134413",
-    "url": "/learning-visualizer/js/chunk-2d0de2bb.57343b46.js"
+    "revision": "03b959829bfccb403d2d",
+    "url": "/learning-visualizer/js/chunk-2d0de2bb.090733b5.js"
   },
   {
     "revision": "3953275694b5479fd900",
@@ -246,6 +254,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "73ddf6f4c20872052454",
     "url": "/learning-visualizer/js/chunk-2d0f151a.1311109a.js"
+  },
+  {
+    "revision": "1e87eca79d65127514e8",
+    "url": "/learning-visualizer/js/chunk-2d208709.7926545c.js"
   },
   {
     "revision": "31a981f61f12115e8865",
@@ -284,6 +296,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d21d8c1.d18f2123.js"
   },
   {
+    "revision": "32fa9e6b5f8a3bdd972e",
+    "url": "/learning-visualizer/js/chunk-2d2218bf.a1933b1c.js"
+  },
+  {
     "revision": "012441480b9dcd29473b",
     "url": "/learning-visualizer/js/chunk-2d2226d8.2f96c783.js"
   },
@@ -300,12 +316,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d225f68.1bad984f.js"
   },
   {
-    "revision": "b65e8f3ff7b0ec1ba16f",
-    "url": "/learning-visualizer/js/chunk-2d2290fd.e6d0f081.js"
+    "revision": "e307b46af4cb79f4f31b",
+    "url": "/learning-visualizer/js/chunk-2d2290fd.86e9d48a.js"
   },
   {
     "revision": "345a4096eed9a71c2b27",
     "url": "/learning-visualizer/js/chunk-2d229452.81095c4f.js"
+  },
+  {
+    "revision": "b0e4e513e0b133f6bb74",
+    "url": "/learning-visualizer/js/chunk-2d22ba0f.1e6317e5.js"
   },
   {
     "revision": "31105047f455e0403611",
@@ -392,19 +412,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-vendors.d133abd9.js"
   },
   {
-    "revision": "9c684484bade92ac8934",
+    "revision": "c4bd551d5138ae36a1b7",
     "url": "/learning-visualizer/js/d3-demo.b798ee55.js"
   },
   {
-    "revision": "cd413de7a8320def9b7d",
+    "revision": "dd79adacc07b56643a32",
     "url": "/learning-visualizer/js/ol-demo.6459966e.js"
   },
   {
-    "revision": "64775a180bcaa35e8a82",
+    "revision": "df2318b53298a60a8527",
     "url": "/learning-visualizer/js/svg-demo.95871a89.js"
   },
   {
-    "revision": "d0b743026b04caef9ae8",
+    "revision": "f2d651b17ca215722980",
     "url": "/learning-visualizer/js/three-demo.144e7972.js"
   },
   {
