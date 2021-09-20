@@ -21,24 +21,31 @@
       利用
       <code>canvas.toDataURL(type: string, quality?: number)</code> 方法，可以将画布转换为图片文件链接。
     </p>
-    <p>试着点击「生成图片」按钮</p>
+    <p>试着改变一下表单中的参数，触发「生成图片」</p>
     <div>
       <form>
         <label for>
           <span>文件类型：</span>
-          <select name="type" v-model="type">
+          <select name="type" v-model="type" @change="saveHandler">
             <option value="image/png">image/png</option>
             <option value="image/jpeg">image/jpeg</option>
           </select>
         </label>
         <label for>
           <span>文件质量：</span>
-          <input type="range" name="quality" step="0.1" v-model.number="quality" min="0.1" max="1" />
+          <input
+            type="range"
+            name="quality"
+            step="0.1"
+            v-model.number="quality"
+            min="0.1"
+            max="1"
+            @input="saveHandler"
+          />
           <span>{{ quality }}</span>
         </label>
-        <q-button @click.prevent="saveHandler">生成图片</q-button>
-        <img :src="imageURL" alt="canvasToImg" />
-        <a :href="imageURL" v-if="imageURL" download>下载</a>
+        <img :src="imageURL" alt="img" />
+        <a :href="imageURL" v-if="imageURL" download>下载 {{ imageURL.length }}</a>
       </form>
     </div>
   </div>
@@ -72,6 +79,7 @@ export default Vue.extend({
         ctx.fillText('祝大家中秋快乐', ox, oy);
       }
     },
+
     rotateHandler() {
       const canvas = this.$refs.canvasToRotate as HTMLCanvasElement;
       const ctx = canvas.getContext('2d');
@@ -86,6 +94,7 @@ export default Vue.extend({
         ctx.translate(-ox, -oy);
       }
     },
+
     saveHandler() {
       const canvas = this.$refs.canvasToRotate as HTMLCanvasElement;
       const { type, quality } = this;
