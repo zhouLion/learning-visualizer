@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "708bbc42b72b473c69ae",
+    "revision": "4da2d3bfc9f894071146",
     "url": "/learning-visualizer/css/app.18dc3402.css"
   },
   {
@@ -112,7 +112,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/img/three/chess.png"
   },
   {
-    "revision": "95a98d673361d0cddfc72c1cf6fa2308",
+    "revision": "fd28d22dc5599ce10c2133a4658a1e6c",
     "url": "/learning-visualizer/index.html"
   },
   {
@@ -120,8 +120,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/about.b3e3b2f2.js"
   },
   {
-    "revision": "708bbc42b72b473c69ae",
-    "url": "/learning-visualizer/js/app.23a3e1a6.js"
+    "revision": "4da2d3bfc9f894071146",
+    "url": "/learning-visualizer/js/app.6b7c6f98.js"
   },
   {
     "revision": "facdc3819efd28749109",
@@ -256,8 +256,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d0f151a.1311109a.js"
   },
   {
-    "revision": "1e87eca79d65127514e8",
-    "url": "/learning-visualizer/js/chunk-2d208709.7926545c.js"
+    "revision": "fb39a30bd24ebc23c38c",
+    "url": "/learning-visualizer/js/chunk-2d208709.d3387ed5.js"
   },
   {
     "revision": "31a981f61f12115e8865",
@@ -324,8 +324,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/learning-visualizer/js/chunk-2d229452.81095c4f.js"
   },
   {
-    "revision": "b0e4e513e0b133f6bb74",
-    "url": "/learning-visualizer/js/chunk-2d22ba0f.1e6317e5.js"
+    "revision": "5c967eb4fd057e6c0486",
+    "url": "/learning-visualizer/js/chunk-2d22ba0f.b79de583.js"
   },
   {
     "revision": "31105047f455e0403611",
