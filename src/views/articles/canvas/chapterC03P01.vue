@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2>canvas - 图片处理</h2>
+    <p>canvas 上允许你操作图片颜色的红，绿，蓝以及透明度，通过这个，可以实现很多类似 Photoshop 上一样的功能。</p>
     <h3>色彩选择</h3>
     <table class="canvas-demo-table">
       <colgroup>

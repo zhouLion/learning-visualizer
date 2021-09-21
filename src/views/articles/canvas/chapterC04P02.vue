@@ -45,7 +45,7 @@
           <span>{{ quality }}</span>
         </label>
         <img :src="imageURL" alt="img" />
-        <a :href="imageURL" v-if="imageURL" download>下载 {{ imageURL.length }}</a>
+        <a :href="imageURL" v-if="imageURL" download>下载 {{ imageFileSize }}</a>
       </form>
     </div>
   </div>
@@ -64,6 +64,12 @@ export default Vue.extend({
   },
   mounted() {
     this.draw();
+  },
+  computed: {
+    // return human readable file size
+    imageFileSize(): string {
+      return `${(this.imageURL.length / 1024).toFixed(2)}KB`;
+    },
   },
   methods: {
     draw() {
