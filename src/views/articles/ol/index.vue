@@ -16,7 +16,7 @@ const requireComponents = require.context(
 
 
 const requireCodes = require.context(
-  '!!highlight-loader!./',
+  '!!@snoopylion/highlight-loader!./',
   false,
   /chapter.*\.(vue)$/,
   'lazy',

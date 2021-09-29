@@ -40,10 +40,10 @@ import CodePreview from '@/components/CodePreview.vue';
 import SkeletonTest from '~/test/SkeletonTest.vue';
 import SwitchTestVue from '@/components/_ui/test/SwitchTest.vue';
 
-const ButtonCode = () => import('!!highlight-loader!~/test/ButtonTest.vue');
-const ButtonGroupCode = () => import('!!highlight-loader!~/test/ButtonGroupTest.vue');
-const SkeletonCode = () => import('!!highlight-loader!~/test/SkeletonTest.vue');
-const SwitchCode = () => import('!!highlight-loader!~/test/SwitchTest.vue');
+const ButtonCode = () => import('!!@snoopylion/highlight-loader!~/test/ButtonTest.vue');
+const ButtonGroupCode = () => import('!!@snoopylion/highlight-loader!~/test/ButtonGroupTest.vue');
+const SkeletonCode = () => import('!!@snoopylion/highlight-loader!~/test/SkeletonTest.vue');
+const SwitchCode = () => import('!!@snoopylion/highlight-loader!~/test/SwitchTest.vue');
 
 export default Vue.extend({
   components: {
