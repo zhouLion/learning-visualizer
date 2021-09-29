@@ -11,7 +11,7 @@ const hljs = require('highlight.js/lib/common');
  * // vue 文件在 vue-cli 项目中会被默认加载器 vue-loader + babel-loader 以及其它预先处理
  * // 因此使用该加载器时需要手动声明加载器，并且用 「!!」 修饰符屏蔽前置加载器，才能生效
  * const ButtonGroupText = () => import(
- *  '!!highlight-loader!~/test/ButtonGroupTest.vue'
+ *  '!!@snoopylion/highlight-loader!~/test/ButtonGroupTest.vue'
  * );
  *```
  */

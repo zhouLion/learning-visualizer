@@ -1,14 +1,24 @@
 {
-  "name": "highlight-loader",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@snoopylion/highlight-loader",
+  "version": "0.0.2",
+  "description": "A webpack loader to load source code which syntax highlight with hljs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "zhoulion",
   "dependencies": {
     "highlight.js": "^11.2.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4.0.0"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "publishConfig": {
+    "tag": "latest",
+    "access": "public"
   }
 }
